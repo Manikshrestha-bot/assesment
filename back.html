@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Properties</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Common styles for all divs */
+div {
+    margin: 10px auto;
+    padding: 20px;
+    width: 80%;
+    border: 1px solid black;
+    text-align: center;
+    color: rgb(33, 54, 246);
+    border-radius: 20px;
+}
+
+/* Background Color */
+.bg-color {
+    background-color: red;
+    height: 20px;
+    
+}
+
+/* Background Size */
+.bg-size-100 {
+    background-image: url("https://cdn.pixabay.com/photo/2019/02/02/18/03/cat-3971068_640.jpg");
+    background-size: 100px 80px;
+    background-repeat: repeat-y;
+    background-size: contain;
+    margin-right: 4px;
+    height: 20px;
+}
+
+.bg-size-contain {
+    background-image: url(https://images.unsplash.com/photo-1721332149371-fa99da451baa?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-left: 4px;
+    height: 20px;
+}
+
+.bg-size-cover {
+    background-image: url("https://media.istockphoto.com/id/1192236158/photo/explosion-of-colored-powder-on-black-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=gyzKdgKFjR4RYoe2beeS3vPLSg-Z-k76l0Tma2e1XYU=");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    color: aliceblue;
+    height: 20px;
+    margin-right: 4px;
+}
+
+/* Background Image */
+.bg-image {
+    background-image: url("https://media.istockphoto.com/id/1296913338/photo/sonoran-sunset.webp?a=1&b=1&s=612x612&w=0&k=20&c=VXPlZvFFdnuu2T7_LTos3m_2Uxpv_RJ3s7uMrnYIUzA=");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: wheat;
+    height: 20px;
+    margin-left: 4px;
+}
+
+/* Background Repeat */
+.bg-repeat-x {
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/008/734/498/small/happy-smiley-emoticon-face-vector.jpg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    height: 20px;
+    margin-right: 4px;
+}
+
+.bg-repeat-y {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUZMbGO63aa4UgoXX0YQzklOKw2nSuohe3Yw&s");
+    background-repeat: repeat-y;
+    background-size: contain;
+    height: 230px;
+    width: 78px;
+    color: red;
+    font-size: px;
+    margin-left: 50%;
+    
+}
+
+.bg-no-repeat {
+    background-image: url("https://cdn.vectorstock.com/i/500p/87/66/acid-smiley-face-yellow-sticker-with-funny-vector-41588766.jpg");
+    background-repeat: no-repeat;
+    background-size: 100px 80px;
+    height: 20px;
+}
+
+/* Background Attachment */
+.bg-fixed {
+    background-image: url("https://u7.uidownload.com/vector/252/92/vector-beautiful-girl-face-design-vector-set-03-eps.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 200px;
+}
+
+.bg-scroll {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWN0ZuVyC-kSe5F7DEuYpMILoyriw49c11HQ&s");
+   background-attachment: scroll;
+    height: 200px;
+}
+
+/* Background Position */
+.bg-position {
+    background-image: url("https://as2.ftcdn.net/v2/jpg/01/92/60/15/1000_F_192601543_TN4z4ea1iPJ9nSn7VYktDOZfrwRjjH63.jpg");
+    background-position: right top;
+    background-size: 100px 80px;
+    background-repeat: no-repeat;
+    height: 30px;
+}
+
+/* Background Shorthand */
+.bg-shorthand {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5VLQUCuiqSNoBv7RF2lQyt1srSvYOC6pRrQ&s") #2e2e2e repeat right top / contain ;
+    height: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Background Properties </h1>
+
+    <div class="bg-color"></div>
+    <div class="bg-size-100"></div>
+    <div class="bg-size-contain"></div>
+    <div class="bg-size-cover"></div>
+    <div class="bg-image"></div>
+    <div class="bg-repeat-x"></div>
+    <div class="bg-repeat-y"></div>
+    <div class="bg-no-repeat"></div>
+    <div class="bg-fixed"></div>
+    <div class="bg-scroll"></div>
+    <div class="bg-position"></div>
+    <div class="bg-shorthand"></div>
+</body>
+</html>
